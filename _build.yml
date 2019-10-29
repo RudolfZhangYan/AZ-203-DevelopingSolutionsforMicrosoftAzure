@@ -20,7 +20,7 @@ jobs:
       - task: GitHubRelease@0
         displayName: 'Create GitHub Release'
         inputs:
-          gitHubConnection: 'RudolfZhangYan'
+          gitHubConnection: '22266b7a-3b4d-4127-9e79-980f825d706d'
           repositoryName: '$(Build.Repository.Name)'
           tagSource: manual
           tag: 'v$(Build.BuildNumber)'
