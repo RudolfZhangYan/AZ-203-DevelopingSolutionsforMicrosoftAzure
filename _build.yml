@@ -20,7 +20,7 @@ jobs:
       - task: GitHubRelease@0
         displayName: 'Create GitHub Release'
         inputs:
-          gitHubConnection: '6462552ebda1757819278509ee59077271122e54'
+          gitHubConnection: 'RudolfZhang'
           repositoryName: '$(Build.Repository.Name)'
           tagSource: manual
           tag: 'v$(Build.BuildNumber)'
@@ -29,6 +29,7 @@ jobs:
           releaseNotes: '# Version $(Build.BuildNumber) Release'
           assets: '$(Build.SourcesDirectory)/out/*.zip'
           assetUploadMode: replace
+
       - task: PublishBuildArtifacts@1
         displayName: 'Publish Output Files'
         inputs:
